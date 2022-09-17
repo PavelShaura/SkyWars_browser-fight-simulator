@@ -4,13 +4,13 @@ services:
 
   skywars:
     image: pshaura/course_work_5:$GITHUB_REF_NAME-$GITHUB_RUN_ID
-    command: gunicorn --bind 0.0.0.0:80 run:app
+    command: gunicorn --bind 0.0.0.0:8000 run:app
     restart: always
 
   nginx:
     image: nginx:1.19.3
     ports:
-      - 25000:80
+      - 25000:8000
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.confvolumes
     restart: always
