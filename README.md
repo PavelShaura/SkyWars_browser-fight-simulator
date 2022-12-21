@@ -1,6 +1,5 @@
 
-# Course Work 5
-## SkyWars - browser fight simulator (OOP, dataclasses, Flask)
+# SkyWars - browser fight simulator (OOP, dataclasses, Flask)
 
 Press 'Начать игру' to start game\
 Press 'Нанести удар' to hit enemy\
